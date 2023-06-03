@@ -12,25 +12,51 @@
 }
 body{
 	padding-left: calc(50% - 644px);
+	padding-right: calc(50% - 644px);
 	padding-top: 61px;
 	overflow-x: hidden;
 	margin: 0px;
 	background-color: #363636;
 }
-nav{
+nav, .f-top{
 	display: grid;
 	grid-template-columns: 325px 64px 125px 137px 192px 137px 307px;
 	width: 1288px;
 }
-nav img{
+
+nav img, .f-top img{
 	width: 325px;
 }
-nav a{
+nav a, .f-top a{
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 44px;
 	text-decoration: none;
 	margin-top: 14.9px;
+}
+.f-socialise{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 100px;
+
+	width: fit-content;
+	margin-top: 50px;
+	margin-bottom: 130px;
+}
+.f-connect {
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+
+	/* identical to box height */
+
+	color: #FFFFFF;
+	margin-top: 40px;
 }
 .page{
 	margin-top: 173px;
