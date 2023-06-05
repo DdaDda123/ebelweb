@@ -21,7 +21,7 @@
 		</nav>
 		<nav id="mobile-nav">
 			<img src="images/logo.svg" alt="logo">
-			<img id="humburder" src="./images/humburder.svg" alt="humburger">
+			<img id="humburger" src="./images/humburder.svg" alt="humburger">
 		</nav>
 		<div class="page-main" id="pg-1">
 			<div>

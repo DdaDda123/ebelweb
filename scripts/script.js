@@ -9,3 +9,7 @@ const mainSlider = ['1.jpg'];
 function prevImage(slider, elem, i) {
 	
 }
+
+document.getElementById('humburger').onclick = () => {
+	
+}
