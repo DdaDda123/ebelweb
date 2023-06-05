@@ -34,6 +34,9 @@ nav a, .f-top a{
 	text-decoration: none;
 	margin-top: 14.9px;
 }
+#mobile-nav{
+	display: none;
+}
 .f-socialise{
 	display: flex;
 	flex-direction: row;
@@ -106,7 +109,7 @@ nav a, .f-top a{
 	width: 582px;
 	margin-top: 53px;
 	display: grid;
-	grid-template-columns: 295px 251px;
+	grid-template-columns: 50% 50%;
 	gap: 26px;
 }
 #text-2 div{
@@ -115,10 +118,10 @@ nav a, .f-top a{
 	line-height: 24px;
 	color: var(--text-2-color);
 }
-#slide-main-div{
+.slider{
 	margin-top: 130px;
 	width: 640px;
-	height: 458px;
+	height: fit-content;
 	background: var(--slide-bg);
 	border-radius: 20px;
 }
@@ -129,7 +132,7 @@ nav a, .f-top a{
 #slide-main-images{
 	margin-top: 12px;
 	width: 100%;
-	height: 411px;
+	height: fit-content;
 	border-radius: 0px 0px 20px 20px;
 }
 .slided-img{
@@ -226,7 +229,7 @@ nav a, .f-top a{
 	padding: 30px;
 	padding-top: 40px;
 	width: 250px;
-	height: 420px;
+	height: auto;
 	background-color: var(--price-list-color);
 }
 #price-list #title-text{
@@ -234,7 +237,7 @@ nav a, .f-top a{
 	width: 250px;
 	font-weight: 600;
 	font-size: 24px;
-	line-height: 29px;
+	line-height: 1.5;
 	text-align: center;
 
 }
@@ -328,14 +331,17 @@ nav a, .f-top a{
 	line-height: 20px;
 	width: 625px;
 }
-
+#main-page-btn{
+	margin-left: 0 !important;
+	padding: 15px 25px !important;
+}
 @media (max-width: 1300px){
 	*{
 		max-width: 100vw;
-		width: auto;
-		height: auto;
+		width: auto !important;
+		height: auto !important;
 	}
-	#slide-main-div, nav, .changer-btn{
+	#slide-main-div, .changer-btn{
 		display: none;
 	}
 	body{
@@ -347,12 +353,110 @@ nav a, .f-top a{
 		flex-direction: column;
 		position: static;
 	}
-	.page{
+	.page, #changer, #price-list #title-text, #price{
 		height: auto;
 		width: auto;
 	}
-	.page #text{
+	#text, #top-title-text{
 		width: auto;
+		font-size: 20px;
+	}
+	.page #text, #consult{
+		margin-left: 10px;
+	}
+	#title-text{
+		font-size: 36px !important;
+	}
+	#text-2{
+		width: 100vw;
+		font-size: 16px;
+	}
+	#text-2 div{
+		word-wrap: normal;
+	}
+	.price-div{
+		width: 80vw !important;
+	}
+	.price-div #title-text{
+		font-size: 24px !important;
+		width: 90% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.article{
+		padding-top: 10px;
+		display: block;
+		height: auto;
+		position: static;
+		width: 90vw !important;
+	}
+	#back{
+		width: 80vw !important;
+	}
+	#back *{
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+	#price{
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+	footer{
+		margin-top: 100px;
+	}
+	.f-top{
+		font-size: 36px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+
+
+	}
+	.f-top img{
+		width: 326px !important;
+	}
+	.f-connect{
+		font-size: 24px;
+	}
+	.f-socialise{
+		gap: 26px;
+	}
+	.f-socialise img{
+		width: 64px !important;
+	}
+	#slide-main-images img{
+		width: 90vw !important;
+	}
+	#text{
+		word-wrap: normal;
+		width: 80vw !important;
+	}
+	.slider{
+		margin-bottom: 50px !important;
 	}
 
+	#pc-nav{
+		width: 100vw;
+		height: 100vh;
+		background-color: #363636;
+		position: fixed;
+		left: -100vw;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		z-index: 21212121;
+	}
+	#mobile-nav{
+		display: block;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0px;
+		gap: 20px;
+	}
+	body{
+		padding-top: 10px;
+	}
 }

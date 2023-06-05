@@ -13,11 +13,15 @@
 </head>
 <body>
 	<div id="pc-vers">
-		<nav>
+		<nav id="pc-nav">
 			<img src="images/logo.svg"><div></div>
 			<a href="">Прайс</a><div></div>
 			<a href="">Контакты</a><div></div>
 			<a href="tel:+79016074757">+7 901 607 47-57</a>
+		</nav>
+		<nav id="mobile-nav">
+			<img src="images/logo.svg" alt="logo">
+			<img id="humburder" src="./images/humburder.svg" alt="humburger">
 		</nav>
 		<div class="page-main" id="pg-1">
 			<div>
@@ -38,7 +42,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="slide-main-div">
+			<div class="slider" id="slide-main-div">
 				<img src="images/3circus.svg" id="circus">
 				<div id="slide-main-images">
 					<img src="images/main-slider/1.png" id="slided-img">
@@ -56,7 +60,7 @@
 				<img src="images/arrow.svg" id="left-btn" class="changer-btn">
 
 				<div class="article" id="pgch-1">
-					<div id="slide-main-div">
+					<div class="slider">
 						<img src="images/3circus.svg" id="circus">
 						<div id="slide-main-images">
 							<img src="images/main-slider/1.png" id="slided-img">
@@ -89,36 +93,44 @@
 			</div>
 			<div id="price-list">
 				<div class="price-div">
-					<div id="title-text">LANDING PAGE</div>
-					<div id="text">
-						Лендинг пейдж - это страница, специально созданная для максимального привлечения и удержания посетителей, полученных из рекламных источников, с целью повышения конверсии и эффективности платного трафика.
-					</div><div id="help-div"></div>
-					<div id="price">От 10 000 руб.</div>
-					<button id="main-page-btn">Заказать</button>
+					<center>
+						<div id="title-text">LANDING PAGE</div>
+						<div id="text">
+							Лендинг пейдж - это страница, специально созданная для максимального привлечения и удержания посетителей, полученных из рекламных источников, с целью повышения конверсии и эффективности платного трафика.
+						</div><div id="help-div"></div>
+						<div id="price">От 10 000 руб.</div>
+						<button id="main-page-btn">Заказать</button>
+					</center>
 				</div>
 				<div class="price-div">
-					<div id="title-text">САЙТ УСЛУГ</div>
-					<div id="text">
-						В сфере услуг сайт заказывается как для B2B, так и для B2C сегментов. Он имеет привлекательный дизайн, быструю загрузку и удобную систему управления контентом (CMS) для администрирования и работы с контентом.
-					</div><div id="help-div"></div>
-					<div id="price">От 20 000 руб.</div>
-					<button id="main-page-btn">Заказать</button>
+					<center>
+						<div id="title-text">САЙТ УСЛУГ</div>
+						<div id="text">
+							В сфере услуг сайт заказывается как для B2B, так и для B2C сегментов. Он имеет привлекательный дизайн, быструю загрузку и удобную систему управления контентом (CMS) для администрирования и работы с контентом.
+						</div><div id="help-div"></div>
+						<div id="price">От 20 000 руб.</div>
+						<button id="main-page-btn">Заказать</button>
+					</center>
 				</div>
 				<div class="price-div">
-					<div id="title-text">ИНТЕРНЕТ МАГАЗИН</div>
-					<div id="text">
-						У нас вы можете получить полнофункциональный интернет-магазин с настройкой воронки продаж и интеграцией с CRM и 1С. Мы также предлагаем подключение онлайн-кассы согласно требованиям закона 54-ФЗ.
-					</div>
-					<div id="price">От 40 000 руб.</div>
-					<button id="main-page-btn">Заказать</button>
+					<center>
+						<div id="title-text">ИНТЕРНЕТ МАГАЗИН</div>
+						<div id="text">
+							У нас вы можете получить полнофункциональный интернет-магазин с настройкой воронки продаж и интеграцией с CRM и 1С. Мы также предлагаем подключение онлайн-кассы согласно требованиям закона 54-ФЗ.
+						</div>
+						<div id="price">От 40 000 руб.</div>
+						<button id="main-page-btn">Заказать</button>
+					</center>
 				</div>
 				<div class="price-div">
-					<div id="title-text">КОРПОРАТИВНЫЙ САЙТ</div>
-					<div id="text">
-						Сайт компании необходим для обеспечения внутренней коммуникации в фирме и предоставления информации о продуктах или услугах, которые мы предлагаем.
-					</div>
-					<div id="price">От 30 000 руб.</div>
-					<button id="main-page-btn">Заказать</button>
+					<center>
+						<div id="title-text">КОРПОРАТИВНЫЙ САЙТ</div>
+						<div id="text">
+							Сайт компании необходим для обеспечения внутренней коммуникации в фирме и предоставления информации о продуктах или услугах, которые мы предлагаем.
+						</div>
+						<div id="price">От 30 000 руб.</div>
+						<button id="main-page-btn">Заказать</button>
+					</center>
 				</div>
 			</div>
 		</div>
@@ -134,10 +146,13 @@
 			</div>
 			<div id="consult">
 				<div id="back">
-					<div id="title-text">ЗАКАЖИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</div>
-					<input type="" name="" placeholder="Ваше имя" class="inputs">
-					<input type="" name="" placeholder="Ваш телефон" class="inputs">
-					<button id="main-page-btn">Получить консультацию</button>
+					<center>
+						<div id="title-text">ЗАКАЖИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</div>
+						<input type="" name="" placeholder="Ваше имя" class="inputs">
+						<input type="" name="" placeholder="Ваш телефон" class="inputs">
+						<button id="main-page-btn">Получить консультацию</button>
+					</center>
+					
 				</div>
 				<div id="text-div">
 					<div id="title-text">Часто задаваемые вопросы</div>
@@ -227,5 +242,5 @@ class TelegramNotifier
 
 }
 
-TelegramNotifier::notify('lol kek cheburek');
+//TelegramNotifier::notify('lol kek cheburek');
 ?>
