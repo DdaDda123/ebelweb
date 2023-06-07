@@ -1,208 +1,213 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="scripts/normalize.css">
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="scripts/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="scripts/normalize.css">
 	<title>EbelWEB</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div id="pc-vers">
-		<nav id="pc-nav">
-			<img src="images/logo.svg"><div></div>
-			<a href="">Прайс</a><div></div>
-			<a href="">Контакты</a><div></div>
-			<a href="tel:+79016074757">+7 901 607 47-57</a>
-		</nav>
-		<nav id="mobile-nav">
-			<img src="images/logo.svg" alt="logo">
-			<img id="humburger" src="./images/humburder.svg" alt="humburger">
-		</nav>
-		<div class="page-main" id="pg-1">
-			<div>
-				<div id="top-title-text">СОЗДАЁМ ПРОДАЮЩИЕ САЙТЫ</div>
-				<div id="title-text">РАЗРАБОТКА ПРОДАЮЩИХ САЙТОВ ПОД КЛЮЧ</div>
-				<div id="text">
+	<nav>
+		<img src="images/logo.svg" id="logo">
+		<div id="nav-a">
+			<a href="" class="nav-a">Прайс</a><div></div>
+			<a href="" class="nav-a">Контакты</a><div></div>
+			<a href="tel:+79016074757" class="nav-a">+7 901 607 47-57</a>
+		</div>
+	</nav>
+	<content>
+		<div id="main-page">
+			<div id="page-text">
+				<div class="top-header">СОЗДАЁМ ПРОДАЮЩИЕ САЙТЫ</div>
+				<div class="header">РАЗРАБОТКА ПРОДАЮЩИХ САЙТОВ ПОД КЛЮЧ</div>
+				<div class="text">
 					Рассчитайте стоимость сайта 
-					и получите бесплатно стратегию продвижения сайта в топ
+					и получите бесплатно стратегию продвижения сайта в топы
 					Яндекса и Google!
 				</div>
-				<button id="main-page-btn">Рассчитать стоимость сайта</button>
-				<div id="text-2">
-					<div>
+				<button class="button">Рассчитать стоимость сайта</button>
+				<div class="grid-2-columns">
+					<div class="help-text">
 						Сайт будет восхитительно  смотреться на всех устройствах
 					</div>
-					<div>
+					<div class="help-text">
 						Оплата частями за каждый этап выполненной работы
 					</div>
 				</div>
 			</div>
-			<div class="slider" id="slide-main-div">
-				<img src="images/3circus.svg" id="circus">
-				<div id="slide-main-images">
-					<img src="images/main-slider/1.png" id="slided-img">
+			<div id="main-page-slider">
+				<div class="slider-window">
+					<div class="slider">
+						<img src="images/3circus.svg" class="slider-cir">
+						<img src="images/main-slider/1.png" class="slided-img">
+					</div>
+
+					<div class="slider">
+						<img src="images/3circus.svg" class="slider-cir">
+						<img src="images/main-slider/1.png" class="slided-img">
+					</div>
+
+					<div class="slider">
+						<img src="images/3circus.svg" class="slider-cir">
+						<img src="images/main-slider/1.png" class="slided-img">
+					</div>
+
+					<div class="slider">
+						<img src="images/3circus.svg" class="slider-cir">
+						<img src="images/main-slider/1.png" class="slided-img">
+					</div>
 				</div>
 			</div>
+			<div class="mask"></div>
 		</div>
-		<div class="page" id="pg-2">
-			<div id="title-text">
-				СОЗДАЕМ ПРОДАЮЩИЕ САЙТЫ ЛЮБОЙ СЛОЖНОСТИ
-			</div>
-			<div id="text">
+
+		<div class="page" id="page2">
+			<div class="header">СОЗДАЕМ ПРОДАЮЩИЕ САЙТЫ ЛЮБОЙ СЛОЖНОСТИ</div>
+			<div class="text">
 				Мы не только создаем веб-сайты, но и разрабатываем инструменты, который подробно описывает вашу продукцию или услуги, выделяет их преимущества и выдвигает основные качества, отличающие их от конкурентов. Мы учитываем индивидуальный подход каждого предпринимателя (бизнесмена) к представлению своего продукта потребителю при разработке сайта. Корректно разработанный и оформленный дизайн сайта подчеркивает уникальность вашего продукта, увеличивает его узнаваемость на рынке и способствует повышению доверия со стороны клиентов.
 			</div>
-			<div id="changer">
-				<img src="images/arrow.svg" id="left-btn" class="changer-btn">
-
-				<div class="article" id="pgch-1">
+			<div class="mask" id="left"></div>
+			<div id="page2-slider">
+				<button class="slider-list" onclick="ChangeImg2Page('prev');"><img src="images/arrow.svg" class="arrow"></button>
+				<div class="slider-window">
 					<div class="slider">
-						<img src="images/3circus.svg" id="circus">
-						<div id="slide-main-images">
-							<img src="images/main-slider/1.png" id="slided-img">
+						<div class="slider-photo">
+							<img src="images/3circus.svg" class="slider-cir">
+							<img src="images/main-slider/1.png" class="slided-img">
+						</div>
+						<div class="slider-text">
+							<div class="top-header">NOTICE BOARD</div>
+							<div class="header">сейчас не существует</div>
+							<div class="grid-2-columns">
+								<div>Тематика сайта:</div><div class="text-right">Тайм менеджмент</div>
+								<div>Тип:</div><div class="text-right">Сервис</div>
+							</div>
+							<div class="text">
+								Сайт был сделан как сервис для помощи любителям Android, где нет синхронизации заметок с телефона с компьютером и были разработаны 2 клиента для Windows и Android
+							</div>
+							<button class="button">Рассчитать стоимость сайта</button>
 						</div>
 					</div>
-					<div class="help-text">
-						<div id="top-title-text">NOTICE BOARD</div>
-						<div id="under-title-text">сейчас не существует</div>
-						<div id="list">
-							<div>Тематика сайта:</div><div class="right-al">Тайм менеджмент</div>
-							<div>Тип:</div><div class="right-al">Сервис</div>
+					
+					<div class="slider">
+						<div class="slider-photo">
+							<img src="images/3circus.svg" class="slider-cir">
+							<img src="images/main-slider/1.png" class="slided-img">
 						</div>
-						<div id="text">
-							Сайт был сделан как сервис для помощи любителям Android, где нет синхронизации заметок с телефона с компьютером и были разработаны 2 клиента для Windows и Android
+						<div class="slider-text">
+							<div class="top-header">NOTICE BOARD</div>
+							<div class="header">сейчас не существует</div>
+							<div class="grid-2-columns">
+								<div>Тематика сайта:</div><div class="text-right">Тайм менеджмент</div>
+								<div>Тип:</div><div class="text-right">Сервис</div>
+							</div>
+							<div class="text">
+								Сайт был сделан как сервис для помощи любителям Android, где нет синхронизации заметок с телефона с компьютером и были разработаны 2 клиента для Windows и Android
+							</div>
+							<button class="button">Рассчитать стоимость сайта</button>
 						</div>
-						<button id="main-page-btn">Рассчитать стоимость сайта</button>
 					</div>
 				</div>
-
-				<img src="images/arrow.svg" id="right-btn" class="changer-btn" style="rotate: 180deg;">
-			</div>
+				<button class="slider-list" onclick="ChangeImg2Page('next');" style="rotate: 180deg;"><img src="images/arrow.svg" class="arrow"></button>
+			</div><div class="mask"></div>
 		</div>
 
-		<div class="page" id="pg-3">
-			<div id="title-text">
-				СТОИМОСТЬ РАЗРАБОТКИ САЙТА
-			</div>
-			<div id="text">
+		<div class="page" id="page3">
+			<div class="header">СТОИМОСТЬ РАЗРАБОТКИ САЙТА</div>
+			<div class="text">
 				Каждый сайт, который мы создаем, исходит из индивидуального технического задания, разработанного специально для вашей отрасли, с учетом всех особенностей вашего продукта. Цены на разработку устанавливаются с учетом детального исследования концепции и дизайна сайта.
 			</div>
-			<div id="price-list">
-				<div class="price-div">
-					<center>
-						<div id="title-text">LANDING PAGE</div>
-						<div id="text">
-							Лендинг пейдж - это страница, специально созданная для максимального привлечения и удержания посетителей, полученных из рекламных источников, с целью повышения конверсии и эффективности платного трафика.
-						</div><div id="help-div"></div>
-						<div id="price">От 10 000 руб.</div>
-						<button id="main-page-btn">Заказать</button>
-					</center>
+			<div id="cost">
+				<div class="cost">
+					<div class="header">LANDING PAGE</div>
+					<div class="text">
+						Лендинг пейдж - это страница, специально созданная для максимального привлечения и удержания посетителей, полученных из рекламных источников, с целью повышения конверсии и эффективности платного трафика.
+					</div>
+					<div class="top-header">От 10 000 руб.</div>
+					<center><button class="button">Заказать</button></center>
 				</div>
-				<div class="price-div">
-					<center>
-						<div id="title-text">САЙТ УСЛУГ</div>
-						<div id="text">
-							В сфере услуг сайт заказывается как для B2B, так и для B2C сегментов. Он имеет привлекательный дизайн, быструю загрузку и удобную систему управления контентом (CMS) для администрирования и работы с контентом.
-						</div><div id="help-div"></div>
-						<div id="price">От 20 000 руб.</div>
-						<button id="main-page-btn">Заказать</button>
-					</center>
+
+				<div class="cost">
+					<div class="header">САЙТ УСЛУГ</div>
+					<div class="text">
+						В сфере услуг сайт заказывается как для B2B, так и для B2C сегментов. Он имеет привлекательный дизайн, быструю загрузку и удобную систему управления контентом (CMS) для администрирования и работы с контентом.
+					</div>
+					<div class="top-header">От 20 000 руб.</div>
+					<center><button class="button">Заказать</button></center>
 				</div>
-				<div class="price-div">
-					<center>
-						<div id="title-text">ИНТЕРНЕТ МАГАЗИН</div>
-						<div id="text">
-							У нас вы можете получить полнофункциональный интернет-магазин с настройкой воронки продаж и интеграцией с CRM и 1С. Мы также предлагаем подключение онлайн-кассы согласно требованиям закона 54-ФЗ.
-						</div>
-						<div id="price">От 40 000 руб.</div>
-						<button id="main-page-btn">Заказать</button>
-					</center>
+
+				<div class="cost">
+					<div class="header">КОРПОРАТИВНЫЙ САЙТ</div>
+					<div class="text-2">
+						Сайт компании необходим для обеспечения внутренней коммуникации в фирме и предоставления информации о продуктах или услугах, которые мы предлагаем.
+					</div>
+					<div class="top-header">От 30 000 руб.</div>
+					<center><button class="button">Заказать</button></center>
 				</div>
-				<div class="price-div">
-					<center>
-						<div id="title-text">КОРПОРАТИВНЫЙ САЙТ</div>
-						<div id="text">
-							Сайт компании необходим для обеспечения внутренней коммуникации в фирме и предоставления информации о продуктах или услугах, которые мы предлагаем.
-						</div>
-						<div id="price">От 30 000 руб.</div>
-						<button id="main-page-btn">Заказать</button>
-					</center>
+
+				<div class="cost">
+					<div class="header">ИНТЕРНЕТ МАГАЗИН</div>
+					<div class="text-2">
+						У нас вы можете получить полнофункциональный интернет-магазин с настройкой воронки продаж и интеграцией с CRM и 1С. Мы также предлагаем подключение онлайн-кассы согласно требованиям закона 54-ФЗ.
+					</div>
+					<div class="top-header">От 40 000 руб.</div>
+					<center><button class="button">Заказать</button></center>
 				</div>
 			</div>
 		</div>
-
-		<div class="page" id="pg-4">
-			<div id="title-text">
-				БЕСПЛАТНАЯ ПОДДЕРЖКА САЙТА В ТЕЧЕНИЕ 3-Х МЕСЯЦЕВ
+		<div class="page" id="page4">
+			<div class="header">БЕСПЛАТНАЯ ПОДДЕРЖКА САЙТА В ТЕЧЕНИЕ 3-Х МЕСЯЦЕВ</div>
+			<div class="text">
+				Порядочные разработчики всегда дают гарантию на выполненные работы.
+				Мы предоставляем нашим клиентам 3 месяца бесплатной технической поддержки.
+				По нашему опыту этот период достаточен для выявления всех возможных неполадок.
 			</div>
-			<div id="text">
-				Порядочные разработчики всегда дают гарантию на выполненные работы. <br>
-				Мы предоставляем нашим клиентам 3 месяца бесплатной технической поддержки. <br>
-				По нашему опыту этот период достаточен для выявления всех возможных неполадок. <br>
-			</div>
-			<div id="consult">
-				<div id="back">
-					<center>
-						<div id="title-text">ЗАКАЖИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</div>
-						<input type="" name="" placeholder="Ваше имя" class="inputs">
-						<input type="" name="" placeholder="Ваш телефон" class="inputs">
-						<button id="main-page-btn">Получить консультацию</button>
-					</center>
-					
+			<div class="grid-2-columns">
+				<div id="call-back">
+					<div class="header">ЗАКАЖИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</div>
+					<input type="text" placeholder="Ваше имя" class="input">
+					<input type="tel" placeholder="Ваше телефон" class="input">
+					<center><button class="button">Получить консультацию</button></center>
 				</div>
-				<div id="text-div">
-					<div id="title-text">Часто задаваемые вопросы</div>
-					<div id="all-text">
-						<div id="top-title-text">Что такое “сайт под ключ”</div>
-						<div id="text">
-							Сайт под ключ – это в конце разработки вы получаете сайт с наполнением, готовый к приему посетителей. Создание сайта «под ключ» подразумевает разработку структуры сайта, написание текстов и подбор графики на стадии производства.
-						</div>
-						<div id="top-title-text">Сколько времени занимает разработка сайта</div>
-						<div id="text">
-							Разрабатываем сайты от 7 дней. Срок разработки увеличивается если вы хотите уникальный дизайн, получить сайт под ключ с заведенным контентом и SEO подготовкой для продвижения.
-						</div>
-						<div id="top-title-text">Какие гарантии вы предоставляете</div>
-						<div id="text">
-							Все гарантии сотрудничества прописаны в договоре. Вы не вносите полную предоплату. Оплата проводится в три этапа. Последнюю часть вы платите после сдачи сайта.
-						</div>
+				<div id="questions">
+					<div class="header">Часто задаваемые вопросы</div>
+					<div class="top-header">Что такое “сайт под ключ”</div>
+					<div class="text">
+						Сайт под ключ – это в конце разработки вы получаете сайт с наполнением, готовый к приему посетителей. Создание сайта «под ключ» подразумевает разработку структуры сайта, написание текстов и подбор графики на стадии производства.
+					</div>
+					<div class="top-header">Сколько времени занимает разработка сайта</div>
+					<div class="text">
+						Разрабатываем сайты от 7 дней. Срок разработки увеличивается если вы хотите уникальный дизайн, получить сайт под ключ с заведенным контентом и SEO подготовкой для продвижения.
+					</div>
+					<div class="top-header">Какие гарантии вы предоставляете</div>
+					<div class="text">
+						Все гарантии сотрудничества прописаны в договоре. Вы не вносите полную предоплату. Оплата проводится в три этапа. Последнюю часть вы платите после сдачи сайта.
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer>
-			<div class="f-top">
-				<img src="images/logo.svg"><div></div>
-				<a href=""></a><div></div>
-				<a href=""></a><div></div>
-				<a href="tel:+79016074757">+7 901 607 47-57</a>
-			</div>
-			<center>
-				<p class="f-connect">Можете связаться с нами в</p>
-				<div class="f-socialise">
-					<a href="" target="_blank"><img src="./images/whatsapp.png" alt=""></a>
-					<a href="" target="_blank"><img src="./images/vk.png" alt=""></a>
-					<a href="" target="_blank"><img src="./images/tg.png" alt=""></a>
-				</div>
-			</center>
-			
-		</footer>
-	</div>
-
-
-	<div id="mob-vers">
-
-	</div>
-	<!-- loading scripts+JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/script.js"></script>
+	</content>
+	<footer>
+		<div class="grid-2-columns">
+			<img src="images/logo.svg" id="footer-logo">
+			<a href="tel:+79016074757" id="footer-a">+7 901 607 47-57</a>
+		</div>
+		<center><div id="contuct-us">Можете связаться с нами в</div></center>
+		<div id="icons">
+			<img src="images/whatsapp.png" class="icon">
+			<img src="images/vk.png" class="icon">
+			<img src="images/tg.png" class="icon">
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+	</footer>
 </body>
 </html>
-
-<?php
+<?
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
 
